@@ -4,7 +4,7 @@ Modify [Google's attention model](https://github.com/tensorflow/models/tree/mast
 
 More details can be found in this paper:["Attention-based Extraction of Structured Information from Street View Imagery"](https://arxiv.org/abs/1704.03549)
 
-This project can run on Windows and Ubuntu 16.0.4, using the python3 environment and The network is built using tensorflow
+This project can run on Windows10 and Ubuntu 16.04, using the python3 environment and The network is built using tensorflow
 
 According to the official website, I generated FSNS format tfrecord for Chinese text recognition and a dictionary of 5,400 Chinese characters. The method of generating FSNS tfrecord can be referred to here.[https://github.com/A-bone1/FSNS-tfrecord-generate](https://github.com/A-bone1/FSNS-tfrecord-generate)
 
