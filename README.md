@@ -17,7 +17,9 @@ According to the official website, I generated FSNS format tfrecord for Chinese 
 
 2、You will also need to include it into the datasets/__init__.py and specify the dataset name in the command line.If you are modifying directly on my newtextdataset.py, you do not have to do this step
 
-3、```
+3、
+```
 cd python
 python train.py --dataset_name=newtextdataset
-   ```
+
+```
