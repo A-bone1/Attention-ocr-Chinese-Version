@@ -30,7 +30,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%A4%A7%E5%9B%BE.jpg)
 
 ## Verify your own model
-1、Make your validation generate FSNS tfrecord and name it train_eval*, then place it under datasets / data / fsns / train /
+1、Generate your validation  FSNS tfrecord and name it train_eval*, then place it under datasets / data / fsns / train /
 
 2、Verify your own model
 ```
