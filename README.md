@@ -23,3 +23,5 @@ cd python
 
 python train.py --dataset_name=newtextdataset
   ```
+
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%A4%A7%E5%9B%BE.jpg)
