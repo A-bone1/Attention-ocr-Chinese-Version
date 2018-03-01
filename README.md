@@ -25,7 +25,14 @@ python train.py --dataset_name=newtextdataset
 import os
 os.environ['CUDA_VISIBLE_DEVICES'] = ''
 ```
-![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0%E5%A4%A7%E5%9B%BE.jpg)
+5、 The required files of tensorboard are stored under / logs and can be viewed using the commands below.
+```
+tensorboard  --logdir=logs
+```
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B02.0.jpg)
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E8%BE%93%E5%85%A5%E5%9B%BE%E7%89%87.jpg)
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%A0%87%E7%AD%BE%E6%96%87%E6%9C%AC.jpg)
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E9%A2%84%E6%B5%8B%E6%96%87%E6%9C%AC.jpg)
 
 ## Verify your own model
 1、Generate your validation  FSNS tfrecord and name it train_eval*, then place it under datasets / data / fsns / train /
@@ -34,8 +41,12 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 ```
 python eval.py
 ```
-
-## How to use a pre-trained model
+3、The results can be view used tensorboard , the required documents stored under / tmp / attention_ocr / eval
+```
+tensorboard  --logdir=/tmp/attention_ocr/eval
+```
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E5%87%86%E7%A1%AE%E7%8E%87.jpg)
+## How to use a trained model
 ```
 python demo_inference.py --batch_size=32 \
   --checkpoint=model.ckpt-399731\
