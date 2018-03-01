@@ -29,11 +29,11 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 ```
 tensorboard  --logdir=logs
 ```
-###Loss Function
+### Loss Function
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B02.0.jpg)
-###Original Image
+### Original Image
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E8%BE%93%E5%85%A5%E5%9B%BE%E7%89%87.jpg)
-###Predictive text
+### Predictive text
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E9%A2%84%E6%B5%8B%E6%96%87%E6%9C%AC.jpg)
 
 ## Verify your own model
