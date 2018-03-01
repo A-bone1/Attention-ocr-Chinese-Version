@@ -47,6 +47,7 @@ python eval.py
 ```
 tensorboard  --logdir=/tmp/attention_ocr/eval
 ```
+### Accuracy
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E5%87%86%E7%A1%AE%E7%8E%87.jpg)
 ## How to use a trained model
 ```
