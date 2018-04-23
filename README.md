@@ -30,7 +30,7 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 tensorboard  --logdir=logs
 ```
 ### Loss Function
-![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B02.0.jpg)
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0.jpg)
 ### Original Image
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E8%BE%93%E5%85%A5%E5%9B%BE%E7%89%87.jpg)
 ### Predictive text
@@ -48,7 +48,8 @@ python eval.py
 tensorboard  --logdir=/tmp/attention_ocr/eval
 ```
 ### Accuracy
-![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E5%87%86%E7%A1%AE%E7%8E%87.jpg)
+Now,The character accuracy of 1.8million Synthetic pictures is 92.96%,and the sequence accuracy is 80.18%
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E7%B2%BE%E7%A1%AE%E5%BA%A6.jpg)
 ## How to use a trained model
 ```
 python demo_inference.py --batch_size=32 \
