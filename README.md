@@ -7,6 +7,8 @@ More details can be found in this paper:["Attention-based Extraction of Structur
 This project can run on Windows10 and Ubuntu 16.04, using the python3 environment and The network is built using tensorflow
 
 According to the official website, I generated FSNS format tfrecord for Chinese text recognition and a dictionary of 5,400 Chinese characters. The method of generating FSNS tfrecord can be referred to here.[https://github.com/A-bone1/FSNS-tfrecord-generate](https://github.com/A-bone1/FSNS-tfrecord-generate)
+## overall framework of the network（Attention-CRNN）
+![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/Attention_CRNN.jpg)
 
 ## train your own model
 
@@ -29,6 +31,10 @@ os.environ['CUDA_VISIBLE_DEVICES'] = ''
 ```
 tensorboard  --logdir=logs
 ```
+### Some suggestions for training
+1) You can use the **Curriculum Learning** strategy to accelerate convergence and improve the model's generalization ability.first, training with  simple background training samples , and then gradually adding real, complex natural scene text pictures to increase sample complexity.
+2) The model has high requirements for the memory of GPU. If the memory does not meet the training requirements.You can **reduce** the image size  when the training sample is generated.and then Modify the image parameters in the Training code（image_shape' in the [/python/datasets/newtextdataset.py](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/python/datasets/newtextdataset.py)
+
 ### Loss Function
 ![image](https://github.com/A-bone1/Attention-ocr-Chinese-Version/blob/master/images/%E6%8D%9F%E5%A4%B1%E5%87%BD%E6%95%B0.jpg)
 ### Original Image
