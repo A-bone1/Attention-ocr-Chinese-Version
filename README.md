@@ -2,7 +2,7 @@
 ## The progress was used to  Chinese OCR based on Google Attention OCR. 
 Modify [Google's attention model](https://github.com/tensorflow/models/tree/master/research/attention_ocr) for Chinese text recognition.
 
-More details can be found in this paper:["Attention-based Extraction of Structured Information from Street View Imagery"](https://arxiv.org/abs/1704.03549)
+More details can be found in this paper:["Attention-based Extraction of Structured Information from Street View Imagery"](https://arxiv.org/abs/1704.03549) and Chinese introduction of this project click [here](https://blog.csdn.net/qq_40003316/article/details/80062023)
 
 This project can run on Windows10 and Ubuntu 16.04, using the python3 environment and The network is built using tensorflow
 
